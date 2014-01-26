@@ -1,6 +1,12 @@
 # Justy
 
-TODO: Write a gem description
+When you want to find duplicate files in folder, all you need is Justy.
+
+Justy - is a command line tool to find duplicates in folders recursively.
+Find methods:
+
+* MD5;
+* File name.
 
 ## Installation
 
@@ -18,7 +24,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Justy has some params for searching.
+
+* --folder = Folder for searching;
+* --type - Type of searching. Must be `md5` or `filename`;
+* -r flag - This flag is for detecting relative folder searching or not. 
 
 ## Contributing
 

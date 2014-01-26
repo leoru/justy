@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.version       = Justy::VERSION
   spec.authors       = ["Kirill Kunst"]
   spec.email         = ["kirillkunst@gmail.com"]
-  spec.description   = %q{When you want to find duplicate files in folder, all you need is justy}
+  spec.description   = %q{When you want to find duplicate files in folder, all you need is Justy}
   spec.summary       = %q{Justy - duplicate files finder}
   spec.homepage      = "http://github.com/leoru/justy"
   spec.license       = "MIT"
