@@ -8,7 +8,6 @@ class NameFindCommand < FindCommand
     Dir.glob(folder + '/**/*', File::FNM_DOTMATCH).each do |full_filename|
       next if File.directory?(full_filename)
       key = File.basename(full_filename)
-      puts key
       if @files.has_key? key
         @files[key].push full_filename
       else

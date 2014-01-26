@@ -26,9 +26,17 @@ Or install it yourself as:
 
 Justy has some params for searching.
 
-* --folder = Folder for searching;
-* --type - Type of searching. Must be `md5` or `filename`;
-* -r flag - This flag is for detecting relative folder searching or not. 
+* --folder (or -f) - Folder for searching;
+* --type (or -t) - Type of searching. Must be `md5` or `filename`;
+* --relative (or -r) flag - This flag is for detecting relative folder searching or not. 
+
+
+## Example 
+Find all duplicates in directory `/Users/ars/Projects/` with `File name` search method not relatively:
+    $ justy --folder=/Users/ars/Projects/ -t filename
+
+Find all duplicates in relative to current working directory with `md5` search method:
+    $ justy --type=md5 --relative
 
 ## Contributing
 
