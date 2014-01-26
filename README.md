@@ -33,9 +33,11 @@ Justy has some params for searching.
 
 ## Example 
 Find all duplicates in directory `/Users/ars/Projects/` with `File name` search method not relatively:
+
     $ justy --folder=/Users/ars/Projects/ -t filename
 
 Find all duplicates in relative to current working directory with `md5` search method:
+
     $ justy --type=md5 --relative
 
 ## Contributing
