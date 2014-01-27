@@ -16,9 +16,13 @@ module Justy
 
     def run(args)
       options = @parser.parse(args)
-      @find_command = FindCommandFactory.create_command(options[:type].to_sym)
-      folder = folder_for_options(options)
-      @find_command.run(folder)
+      if (!options[:type].nil?)
+        @find_command = FindCommandFactory.create_command(options[:type].to_sym)
+        folder = folder_for_options(options)
+        @find_command.run(folder)
+      else
+        puts @parser.options_parser
+      end
     end
 
     def folder_for_options(options)
@@ -32,7 +36,6 @@ module Justy
       end
       return folder_path
     end
-
   end
 
 end
